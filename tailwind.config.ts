@@ -57,13 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom portfolio colors
+        // Enhanced portfolio colors
         'hero-start': "hsl(var(--hero-gradient-start))",
+        'hero-mid': "hsl(var(--hero-gradient-mid))",
         'hero-end': "hsl(var(--hero-gradient-end))",
         'section-bg': "hsl(var(--section-bg))",
+        'section-bg-alt': "hsl(var(--section-bg-alt))",
         'project-card': "hsl(var(--project-card))",
         'skill-tag': "hsl(var(--skill-tag))",
         'skill-tag-text': "hsl(var(--skill-tag-text))",
+        'skill-progress-bg': "hsl(var(--skill-progress-bg))",
+        'skill-progress-fill': "hsl(var(--skill-progress-fill))",
+        'glass-bg': "hsl(var(--glass-bg))",
+        'glass-border': "hsl(var(--glass-border))",
+      },
+      fontFamily: {
+        'primary': ['Inter', 'system-ui', 'sans-serif'],
+        'display': ['Poppins', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
