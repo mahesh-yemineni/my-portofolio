@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom portfolio colors
+        'hero-start': "hsl(var(--hero-gradient-start))",
+        'hero-end': "hsl(var(--hero-gradient-end))",
+        'section-bg': "hsl(var(--section-bg))",
+        'project-card': "hsl(var(--project-card))",
+        'skill-tag': "hsl(var(--skill-tag))",
+        'skill-tag-text': "hsl(var(--skill-tag-text))",
       },
       borderRadius: {
         lg: "var(--radius)",
