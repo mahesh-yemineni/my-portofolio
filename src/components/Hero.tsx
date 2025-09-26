@@ -79,7 +79,7 @@ const Hero = () => {
           <div className="slide-up flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mb-16 mt-12">
             <Button 
               size="lg" 
-              className="btn-cta-primary text-lg px-8 py-4 font-semibold min-w-[180px]"
+              className="btn-cta-secondary text-lg px-8 py-4 font-semibold min-w-[180px]"
               onClick={scrollToContact}
             >
               <Mail className="mr-3 h-5 w-5" />
