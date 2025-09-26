@@ -33,38 +33,53 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="max-w-5xl mx-auto text-center text-white">
-          <div className="fade-in">
-            <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 mb-6">
-                Available for opportunities ✨
-              </span>
+        <div className="max-w-6xl mx-auto text-white">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <div className="text-center lg:text-left">
+              <div className="fade-in">
+                <div className="mb-6">
+                  <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20 mb-6">
+                    Available for opportunities ✨
+                  </span>
+                </div>
+                <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl font-bold font-display mb-8 leading-tight">
+                  Hi, I'm{" "}
+                  <span className="relative inline-block">
+                    <span className="text-white drop-shadow-2xl">Mahesh</span>
+                    <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
+                  </span>
+                </h1>
+                <p className="text-xl md:text-2xl mb-4 text-white/95 leading-relaxed font-medium">
+                  Passionate about building impactful solutions in
+                </p>
+                <div className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold mb-12 space-y-2">
+                  <div className="text-white/90">
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics</span>
+                    <span className="mx-3 text-white/60">•</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce</span>
+                    <span className="mx-3 text-white/60">•</span>
+                    <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold font-display mb-8 leading-tight">
-              Hi, I'm{" "}
-              <span className="relative inline-block">
-                <span className="text-white drop-shadow-2xl">Mahesh</span>
-                <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-transparent rounded-lg blur-lg opacity-50"></div>
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 text-white/95 leading-relaxed font-medium">
-              Passionate about building impactful solutions in
-            </p>
-            <div className="text-2xl md:text-3xl font-bold mb-12 space-y-2">
-              <div className="text-white/90">
-                <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Data Analytics</span>
-                <span className="mx-4 text-white/60">•</span>
-                <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Salesforce</span>
-                <span className="mx-4 text-white/60">•</span>
-                <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Software Development</span>
+            
+            {/* Professional Photo */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative scale-in">
+                <div className="hero-photo bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center text-white/40 text-6xl font-light backdrop-blur-sm">
+                  M
+                </div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-white/10 to-transparent rounded-full blur-2xl opacity-30"></div>
               </div>
             </div>
           </div>
           
-          <div className="slide-up flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <div className="slide-up flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mb-16 mt-12">
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300 text-lg px-8 py-4 font-semibold"
+              className="btn-cta-primary text-lg px-8 py-4 font-semibold min-w-[180px]"
               onClick={scrollToContact}
             >
               <Mail className="mr-3 h-5 w-5" />
@@ -72,8 +87,7 @@ const Hero = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-2 border-white/30 text-white hover:bg-white hover:text-primary backdrop-blur-sm hover:scale-105 transition-all duration-300 text-lg px-8 py-4 font-semibold"
+              className="btn-cta-secondary text-lg px-8 py-4 font-semibold min-w-[180px]"
             >
               <Download className="mr-3 h-5 w-5" />
               Download Resume
@@ -81,7 +95,7 @@ const Hero = () => {
           </div>
           
           {/* Enhanced Social Links */}
-          <div className="slide-up flex justify-center space-x-8 mb-16">
+          <div className="slide-up flex justify-center lg:justify-start space-x-8 mb-16">
             {[
               { icon: Github, href: "https://github.com", label: "GitHub" },
               { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
